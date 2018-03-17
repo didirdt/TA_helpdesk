@@ -81,7 +81,7 @@ en:
   select_locale: "Change your Locale"
 
   # footer
-  powered_by: "Powered by Helpy. An Open Source Helpdesk."
+  powered_by: "Powered by UPT E-Learning."
   get_your_copy: "Grab your copy on GitHub"
   version: "Version:"
 
@@ -332,9 +332,9 @@ en:
   notifications: "Notifications"
   settings: "Settings"
   general: "General"
-  general_description: "Manage general system settings like your Helpy name, what company to link back to."
+  general_description: "Manage general system settings like name, what company to link back to."
   design: "Design"
-  design_description: "Control the logos and colors and other design aspects of your Helpy"
+  design_description: "Control the logos and colors and other design aspects"
   international: "International"
   international_description:
   widget: "Embeddable Widget"

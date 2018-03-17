@@ -53,7 +53,7 @@ class Admin::BaseController < ApplicationController
       @admins = User.agents #can_receive_ticket.tagged_with(current_user.team_list, :any => true)
     else
       topics = Topic.all
-      @admins = User.agents.includes(:topics)
+      @admins = User.agents.joins(:topics)
     end
     @new = topics.unread.count
     @unread = topics.unread.count

@@ -156,6 +156,7 @@ class TopicsController < ApplicationController
   private
 
   def initialize_new_ticket_form_vars
+    @message = ""
     @topic = Topic.new #unless @topic
     @user = @topic.build_user unless user_signed_in?
     @topic.posts.build #unless @topic.posts

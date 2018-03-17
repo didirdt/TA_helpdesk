@@ -1,0 +1,15 @@
+<% title "#{admin_title} #{t(:discussions, default: "Discussions")}" %>
+
+<% content_for :pipeline do %>
+<%#= render partial: 'admin/shared/pipeline' %>
+<% end %>
+
+<%= user_header %>
+<div id="user-info">
+  <%= render 'admin/users/user_info_horizontal' %>
+</div>
+<div class="row">
+  <div class="col-md-12" id="tickets">
+    <%= render 'admin/topics/tickets' %>
+  </div>
+</div>

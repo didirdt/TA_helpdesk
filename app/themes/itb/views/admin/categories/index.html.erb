@@ -1,0 +1,55 @@
+<% title "#{admin_title} #{t(:content, default: 'Content')}" %>
+
+<script>
+$(document).ready(function(){
+  $('.toggle-controls').on("click", function(e){
+    //get ID
+    var id = e.target.id.split('-')[1];
+    console.log('ID is ' + id);
+    // reveal corresponding id controls
+    $('#controls-' + id).removeClass('hidden');
+  });
+});
+</script>
+
+<div class="admin-header">
+  <h2><%= t(:content, default: 'Content') %>
+    <span class="admin-options text-right pull-right">
+    <%= link_to t(:new_category, default: "New Category"), new_admin_category_path(lang: I18n.locale), class: 'btn btn-primary' %>
+    <%= link_to t(:new_content, default: "New Content"), new_admin_doc_path(lang: I18n.locale), class: 'btn btn-primary' %>
+    </span>
+  </h2>
+</div>
+
+<div class="settings-section">
+  <div class="row group-header vcenter border-bottom">
+    <div class="pull-left tiny-header col-md-12">
+      <%= t(:front_page_categories, default: 'Front Page Categories') %>
+    </div>
+  </div>
+  <div class="sortable">
+    <%= render partial: 'cat', collection: @public_categories %>
+  </div>
+</div>
+
+<div class="settings-section">
+  <div class="row group-header vcenter border-bottom">
+    <div class="pull-left tiny-header col-md-12">
+      <%= t(:other_categories, default: 'Other Categories') %>
+    </div>
+  </div>
+  <div class="sortable">
+    <%= render partial: 'cat', collection: @public_nonfeatured_categories %>
+  </div>
+</div>
+
+<div class="settings-section">
+  <div class="row group-header vcenter border-bottom">
+    <div class="pull-left tiny-header col-md-12">
+      <%= t(:internal_categories, default: 'Private/Internal Categories') %>
+    </div>
+  </div>
+  <div class="sortable">
+    <%= render partial: 'cat', collection: @internal_categories %>
+  </div>
+</div>

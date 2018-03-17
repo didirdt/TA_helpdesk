@@ -1,22 +1,19 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  # For details on connection pooling, see rails configuration guide
-  # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
 
 development:
   <<: *default
-  database: helpy_development
+  database: tickets
   port: 5432
   host: localhost
+  username: postgres
+  password: postgres
 
 test:
   <<: *default
-  database: helpy_test
+  database: tickets
 
 production:
   <<: *default
-  database: helpy_production
-  username: helpy
-  password: <%= ENV['helpy_DATABASE_PASSWORD'] %>

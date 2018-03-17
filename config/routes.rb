@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
-
-  root to: "locales#redirect_on_locale"
+  root to: "topics#new"
 
   devise_for :users, skip: [:password, :registration, :confirmation, :invitations], controllers: { omniauth_callbacks: 'omniauth_callbacks' }
 

@@ -1,0 +1,21 @@
+<%
+################################################################################
+# NOTE: It is STRONGLY suggested that if you wish to customize the look and feel
+# of your Helpy, that you create a custom theme instead.  This will allow
+# you to override any views or styles you wish to, without compromosing your
+# ability to upgrade in the future
+################################################################################
+%>
+
+<% title "#{AppSettings['settings.site_name']}: #{@page_title}" %>
+
+<% if @team.count > 0 && tickets? %>
+<div id="featured-team" class="row">
+  <h2 class="text-center space-h2"><%= t(:support_team)%></h2>
+  <div id='home-team' class= "col-md-12 text-center">
+    <ul class="list-inline">
+    <%= render partial:'team_member', collection: @team %>
+    </ul>
+  </div>
+</div>
+<% end %>

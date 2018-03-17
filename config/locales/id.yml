@@ -21,7 +21,7 @@ id:
   your_profile: "Profil Anda"
   your_tickets: "Tiket Anda"
   locale: "Locale"
-  change_your_locale: "Ganti Locale"
+  change_your_locale: "Ganti Bahasa"
 
   # Voting widget
   did_this_help: "Apakah ini mengatasi masalah Anda?"
@@ -61,7 +61,7 @@ id:
   # Knowledgebase
   written_by: "Ditulis Oleh"
   last_edited: "Edit Terakhir"
-  asked_before: "Apakah pertanyaan Anda sudah terjawab sebelumnya? Mungkin ini mirip-mirip"
+  asked_before: "Apakah pertanyaan Anda sudah terjawab sebelumnya? Mungkin ini berhubunagn"
 
   # Tickets
   tickets: "Tiket"
@@ -78,7 +78,7 @@ id:
   my_profile: 'Profilku'
 
   # footer
-  powered_by: "Dibuat dengan Helpy. Open Source Helpdesk."
+  powered_by: "Dibuat Oleh UPT E-Learning ITB. dari Open Source Helpdesk."
   get_your_copy: "Dapatkan salinannya di GitHub"
   version: "Versi:"
 

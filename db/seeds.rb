@@ -10,7 +10,7 @@
 user_admin = User.create!(
   name: 'Admin',
   login:'admin',
-  email: 'admin@test.com',
+  email: 'admin@mail.com',
   password:'12345678',
   role: 'admin',
   thumbnail: '',
@@ -22,7 +22,7 @@ user_admin = User.create!(
 user_system = User.create!(
   name: 'System',
   login:'system',
-  email: 'system@test.com',
+  email: 'system@mail.com',
   password:'12345678',
   role: 'user',
   admin: false
